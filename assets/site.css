@@ -134,3 +134,14 @@ footer.site nav a:hover { text-decoration: underline; }
 .grid2.center { align-items: center; }
 section.block.notop { padding-top: 0; }
 .toc ol { list-style: none; padding-left: 0; }
+
+/* (E170) Nuova password dal computer */
+.c-form { display: grid; gap: 8px; max-width: 420px; margin: 20px 0; }
+.c-form label { font-weight: 600; }
+.c-form input[type="password"], .c-form input[type="text"] { width: 100%; min-height: 48px; padding: 10px 14px; border: 1px solid var(--line); border-radius: 12px; font: inherit; color: var(--ink); background: #fff; }
+.c-form input:focus-visible { outline: 3px solid #2353DB; outline-offset: 1px; }
+.c-form .nota { margin: 0 0 8px; }
+.c-form .c-scelta { display: flex; align-items: center; gap: 8px; font-weight: 400; margin: 4px 0 8px; }
+.c-form .c-msg { margin: 0 0 8px; padding: 10px 14px; border-radius: 12px; background: #FEF2F2; color: #991B1B; font-weight: 600; }
+.c-form button { justify-content: center; cursor: pointer; font: inherit; font-weight: 600; }
+.c-form button:disabled { opacity: .6; cursor: default; }

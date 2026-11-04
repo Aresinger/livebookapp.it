@@ -6,7 +6,7 @@
 <title>Conferma account · LiveBook</title>
 <meta name="description" content="Conferma dell&#x27;account LiveBook.">
 <link rel="canonical" href="https://livebookapp.it/conferma.html">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; media-src 'self'; style-src 'self'; script-src 'self'; font-src 'self'; base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; media-src 'self'; style-src 'self'; script-src 'self'; font-src 'self'; connect-src https://wlyyizoqztgmxriamkws.supabase.co; base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#2353DB">
@@ -35,7 +35,7 @@
 <main id="contenuto">
 
 <article class="doc conferma"><div class="wrap">
-<section id="c-attesa"><h1>Un attimo…</h1><p>Stiamo controllando il link.</p><noscript><p><strong>Se hai aperto il link per confermare l’account, la registrazione è completata.</strong> Apri LiveBook sul telefono e accedi con la tua email e la password.</p></noscript></section>
+<section id="c-attesa"><h1>Un attimo…</h1><p>Stiamo controllando il link.</p><noscript><p><strong>Se hai aperto il link per confermare l’account, la registrazione è completata.</strong> Apri LiveBook sul telefono e accedi con la tua email e la password. Per scegliere una nuova password da questa pagina devi attivare JavaScript, oppure aprire il link dal telefono.</p></noscript></section>
 <section id="c-telefono" hidden>
   <h1>Ci siamo quasi</h1>
   <p>Ti riportiamo in LiveBook. Se l’app non si apre da sola, tocca il pulsante.</p>
@@ -45,7 +45,7 @@
 <section id="c-neutro" hidden>
   <h1>Apri LiveBook sul telefono</h1>
   <p>Se stavi confermando l’account, è tutto a posto: apri <strong>LiveBook sul tuo telefono</strong> e accedi.</p>
-  <p>Se stavi reimpostando la password, questo link va aperto dal telefono: nell’app tocca di nuovo «Password dimenticata» e apri dal telefono il nuovo link.</p>
+  <p>Se stavi reimpostando la password, nell’app tocca di nuovo «Password dimenticata»: il nuovo link ti farà scegliere la password anche da questa pagina.</p>
 </section>
 <section id="c-computer" hidden>
   <h1>Account confermato</h1>
@@ -54,9 +54,30 @@
   <p>Non hai ancora l’app? <a href="index.html#scarica">Scaricala qui</a>.</p>
 </section>
 <section id="c-password" hidden>
-  <h1>Apri il link dal telefono</h1>
-  <p>La nuova password si sceglie nell’app LiveBook, quindi questo link va aperto <strong>dal telefono</strong> su cui hai LiveBook.</p>
-  <p>Il link vale una sola volta: nell’app tocca <strong>Accedi › Password dimenticata</strong> per riceverne uno nuovo e aprilo dall’email sul telefono.</p>
+  <h1>Chiedi un nuovo link</h1>
+  <p>Questo link non permette di scegliere la password da qui.</p>
+  <p>Nell’app tocca <strong>Accedi › Password dimenticata</strong> per riceverne uno nuovo: potrai aprirlo dal telefono oppure dal computer.</p>
+</section>
+<section id="c-nuova" hidden>
+  <h1>Scegli la nuova password</h1>
+  <p>Vale subito anche nell’app LiveBook.</p>
+  <form id="c-form" class="c-form" novalidate>
+    <label for="c-p1">Nuova password</label>
+    <input id="c-p1" type="password" autocomplete="new-password" required aria-describedby="c-aiuto">
+    <p id="c-aiuto" class="nota">Almeno 8 caratteri.</p>
+    <label for="c-p2">Ripeti la password</label>
+    <input id="c-p2" type="password" autocomplete="new-password" required>
+    <label class="c-scelta"><input id="c-mostra" type="checkbox"> Mostra la password</label>
+    <p id="c-msg" class="c-msg" role="alert" hidden></p>
+    <button id="c-salva" class="btn btn-dark" type="submit">Salva la nuova password</button>
+  </form>
+  <p class="nota">Il link vale una sola volta e per un tempo limitato. Se non hai chiesto tu il cambio, chiudi questa pagina: la password resta quella di prima.</p>
+</section>
+<section id="c-fatto" hidden>
+  <h1 tabindex="-1">Password aggiornata</h1>
+  <p id="c-account" hidden></p>
+  <p><strong>Ora apri LiveBook sul telefono e accedi con la nuova password.</strong> Se l’app è già sulla schermata di accesso, inseriscila lì: non serve fare altro.</p>
+  <p>Gli altri dispositivi collegati a questo account dovranno accedere di nuovo. Se usavi Face ID o l’impronta, la prima volta inserisci la password a mano.</p>
 </section>
 <section id="c-errore" hidden>
   <h1>Link non più valido</h1>
