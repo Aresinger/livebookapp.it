@@ -38,12 +38,21 @@
 <p class="meta">Versione 1.1.2 · per Android 7 o successivo · gratis</p>
 <p>Su Android LiveBook non si scarica da Google Play ma da questa pagina, il sito ufficiale dell’app.</p>
 
-<div class="box"><p class="flush"><a class="btn btn-dark" href="https://github.com/Aresinger/livebookapp.it/releases/latest/download/LiveBook-arm64.apk"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 4h2v9.2l3.3-3.3 1.4 1.4L12 17l-5.7-5.7 1.4-1.4 3.3 3.3zM5 19h14v2H5z"/></svg><span><small>Scarica</small>LiveBook 1.1.2</span></a></p>
-<p>Circa 41 MB. Se sul tuo telefono, molto vecchio, l’app non si installa, prova <a href="https://github.com/Aresinger/livebookapp.it/releases/latest/download/LiveBook-armv7.apk">questa versione</a>.</p></div>
+<div class="box apk-box" id="scarica">
+<div class="apk-inapp" id="apk-inapp" hidden>
+<p class="flush"><strong>Stai guardando questa pagina dentro un’altra app.</strong> Da qui il download non parte: aprila nel browser del telefono.</p>
+<p class="flush apk-azioni"><a class="btn btn-dark" id="apk-apri" href="intent://livebookapp.it/android.html#Intent;scheme=https;action=android.intent.action.VIEW;category=android.intent.category.BROWSABLE;end">Apri nel browser</a> <button class="btn btn-ghost" type="button" id="apk-copia">Copia l’indirizzo</button></p>
+<p class="flush note" id="apk-copiato" role="status"></p>
+</div>
+<p class="flush"><a class="btn btn-dark apk-link" href="https://github.com/Aresinger/livebookapp.it/releases/download/android-1793625970/LiveBook-arm64.apk"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 4h2v9.2l3.3-3.3 1.4 1.4L12 17l-5.7-5.7 1.4-1.4 3.3 3.3zM5 19h14v2H5z"/></svg><span><small>Scarica</small>LiveBook 1.1.2</span></a></p>
+<p class="apk-avviato" id="apk-avviato" role="status" hidden><strong>Download avviato.</strong> Quando finisce, apri il file dalla notifica in alto oppure dall’app File o Download. Se dopo qualche secondo non vedi nessun download, leggi qui sotto.</p>
+<p>Circa 41 MB. Se sul tuo telefono, molto vecchio, l’app non si installa, prova <a class="apk-link" href="https://github.com/Aresinger/livebookapp.it/releases/download/android-1793625970/LiveBook-armv7.apk">questa versione</a> (circa 37 MB).</p>
+<p class="flush"><strong>Toccando «Scarica» non succede nulla?</strong> Di solito la pagina è aperta dentro un’altra app (Instagram, Facebook, WhatsApp, TikTok, Telegram…), che non scarica file. Tocca <strong>⋮</strong> o <strong>···</strong> in alto a destra, scegli <strong>«Apri nel browser»</strong> o <strong>«Apri in Chrome»</strong> e tocca di nuovo «Scarica». Oppure apri Chrome (o il browser del telefono) e scrivi <strong>livebookapp.it/android.html</strong>.</p>
+</div>
 <h2 id="installa">Come installarla</h2>
 <ol>
 <li>Apri questa pagina <strong>dal telefono Android</strong> e tocca «Scarica».</li>
-<li>Apri il file scaricato, dalla notifica oppure dall’app Download o File.</li>
+<li>Apri il file scaricato, dalla notifica oppure dall’app Download o File. Su alcuni telefoni il browser chiede prima <strong>«Scaricare comunque?»</strong> o il permesso di salvare i file: rispondi di sì.</li>
 <li>Se Android chiede di consentire l’installazione, tocca <strong>Impostazioni</strong>, attiva <strong>«Consenti da questa fonte»</strong> per il browser e torna indietro.</li>
 <li>Tocca <strong>Installa</strong>. Se Play Protect mostra un avviso, tocca <strong>«Altri dettagli»</strong> e poi <strong>«Installa comunque»</strong>.</li>
 </ol>
@@ -70,6 +79,6 @@
     <nav aria-label="Informazioni legali"><a href="privacy.html">Privacy</a><a href="termini.html">Termini e regole</a><a href="cookie.html">Cookie</a><a href="accessibilita.html">Accessibilità</a><a href="supporto.html">Supporto</a><a href="elimina-account.html">Elimina account</a></nav>
   </div>
 </footer>
-
+<script src="assets/android.js" defer></script>
 </body>
 </html>

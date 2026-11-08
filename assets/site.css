@@ -112,6 +112,13 @@ h2 { font-size: clamp(28px, 3.6vw, 40px); line-height: 1.12; letter-spacing: -.8
 .doc th, .doc td { text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); padding: 10px 10px 10px 0; }
 .doc th { font-weight: 700; }
 .doc .box { background: var(--soft); border-radius: 16px; padding: 18px 20px; margin: 18px 0; }
+[hidden] { display: none !important; }
+/* (E193) pagina Android: avviso per i browser interni delle app e conferma del download */
+.apk-inapp { background: #FFF7E6; border: 2px solid #F59E0B; border-radius: 14px; padding: 14px 16px; margin: 0 0 16px; }
+.apk-inapp p + p { margin-top: 10px; }
+.apk-azioni { display: flex; flex-wrap: wrap; gap: 10px; }
+.apk-azioni .btn { min-height: 48px; font-size: 16px; cursor: pointer; font-family: inherit; }
+.apk-avviato { background: #ECFDF3; border: 1px solid #10B981; border-radius: 12px; padding: 10px 14px; margin: 14px 0 0; }
 .toc { background: #F8F9FD; border: 1px solid var(--line); border-radius: 16px; padding: 16px 20px; margin: 0 0 12px; }
 .toc ol { margin: 6px 0 0; padding-left: 1.3em; columns: 2; column-gap: 32px; }
 @media (max-width: 640px) { .toc ol { columns: 1; } .doc table, .doc thead, .doc tbody, .doc tr, .doc th, .doc td { display: block; } .doc thead { display: none; } .doc td { border: 0; padding: 4px 0; } .doc tr { border-bottom: 1px solid var(--line); padding: 10px 0; } .doc td::before { content: attr(data-label); display: block; font-weight: 700; } }
