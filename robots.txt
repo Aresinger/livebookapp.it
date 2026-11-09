@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 Disallow: /conferma.html
+Disallow: /disiscriviti.html
 Sitemap: https://livebookapp.it/sitemap.xml
