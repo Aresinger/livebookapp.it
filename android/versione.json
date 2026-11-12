@@ -1,16 +1,16 @@
 {
- "versione": "1.1.4",
- "build": 1793625974,
+ "versione": "1.1.5",
+ "build": 1793625976,
  "data": "2026-11-12",
  "file": {
   "arm64": {
    "nome": "LiveBook-arm64.apk",
-   "sha256": "969acfce06ae3cfccd7413dc22aa28ea01fb9696a6e686e016839cf7517e2f15",
+   "sha256": "cc4d7999bacc6d087f6cedbee3824935971b0d23ba7eb3cfda48c4739f69e839",
    "mb": 41
   },
   "armv7": {
    "nome": "LiveBook-armv7.apk",
-   "sha256": "0b15f2595eace4c28a92b8761aedf0a44d73dc8c07943eff976924bd0ebf9069",
+   "sha256": "afd448402c36ff7c1e1b395d61ebdd4752767aa8560c748a5578c5f89db73653",
    "mb": 37
   }
  }
