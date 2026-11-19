@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.livebook.livebook",
+      "sha256_cert_fingerprints": [
+        "DB:B2:95:0D:9D:95:22:3A:A0:84:5B:12:2E:97:BB:4E:8B:7B:3F:29:40:1D:CF:50:42:91:14:7D:F3:C6:E5:C2"
+      ]
+    }
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "ANX66X2Z36.com.livebook.livebook"
+        ],
+        "components": [
+          {
+            "/": "/u/*",
+            "comment": "Profili di artisti e locali"
+          }
+        ]
+      }
+    ]
+  }
+}
